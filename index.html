@@ -10,15 +10,19 @@
     <main>
         <form action="action.php" name="validTeszt" method="GET" onsubmit="return validateForm()">
             <label for="vNev">Vezetéknév:</label><br>
-            <input type="text" id="vNev" name="vNev"><br>
+            <input type="text" id="vNev" name="vNev" pattern="^[a-zA-Z]{4,}$"><br>
+
             <label for="kNev">Keresztnév:</label><br>
-            <input type="text" id="kNev" name="kNev"><br><br>
+            <input type="text" id="kNev" name="kNev" pattern="^[a-zA-Z]{4,}$"><br>
            <!--Jelszó-->
-            <label for="jelszo1">Password:</label><br>
-            <input type="jelszo1" id="jelszo1" name="jelszo1"><br><br>
-            <label for="jelszo2">Password:</label><br>
-            <input type="jelszo2" id="jelszo2" name="jelszo2"><br><br>
-            <input type="submit" value="GET">
+
+            <label for="jelszo1">Jelszó:</label><br>
+            <input type="jelszo1" id="jelszo1" name="jelszo1"><br>
+
+            <label for="jelszo2">Jelszó:</label><br>
+            <input type="jelszo2" id="jelszo2" name="jelszo2"><br>
+
+            <input type="submit" value="KÜLDÉS">
           </form> 
 
     </main>
